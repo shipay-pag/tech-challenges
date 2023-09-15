@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "anti_patterns"
+
+version = "0.0.1"
+
+description = ""
+authors = ["ShiPay-Pag <devs@shipay.com.br>"]
+
+[[tool.poetry.source]]
+name = "shipay-pypiserver-external"
+url = "https://pypiserver.shipay.com.br"
+
+[tool.poetry.dependencies]
+
+
+python = "^3.7"
+fastapi = "^0.65.2"
+uvicorn = "^0.14.0"
+dependency-injector = "^4.34.0"
+sqlalchemy = "^1.4.19"
+asyncpg = "^0.24.0"
+sqlalchemy-utils = "^0.38.3"
+gunicorn = "^20.1.0"
+requests = "^2.26.0"
+httpx = "^0.23.0"
+aiologger = "^0.7.0"
+odmantic = "^0.9.2"
+pycpfcnpj = "^1.7.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "6.2.2"
+pytest-httpx = "^0.21.1"
+pylint = "2.7.0"
+pytest-asyncio = "^0.15.1"
+black = "^19.10b0"
+safety = "1.9.0"
+flake8 = "3.8.4"
+pytest-mock = "^3.3.1"
+pytest-cov = "2.11.1"
+requests-mock = "^1.8.0"
+pytest-lazy-fixture = "^0.6.3"
+freezegun = "^1.0.0"
+pytest-freezegun = "^0.4.2"
+faker = "7.0.1"
+factory-boy = "3.2.0"
+pytest-factoryboy = "^2.1.0"
+bandit = "^1.7.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
