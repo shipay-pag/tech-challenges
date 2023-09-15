@@ -9,3 +9,10 @@ sites/site*/public/theme/
 textpattern/
 HISTORY.txt
 README.txt
+.idea
+.vscode/
+*.DStore
+*.DStore/
+.DStore
+.DStore/
+poetry.lock
