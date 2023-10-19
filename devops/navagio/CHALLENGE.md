@@ -53,12 +53,12 @@ poetry install
     obs: Não responder todas as questões não é impeditivo, essa etapa consiste em avaliar o conhecimento em infraestrutura do candidato. 
 
 5. Considere um diretório com diversos arquivos que são adicionados diariamente;
-```
-$ ls 
-$ ARQUIVOS  ARQUIVOS_PROCESSADOS
-$ ls ARQUIVOS/
-$ log_para_processamento_1.log  log_para_processamento_2.log  log_para_processamento_3.log  log_para_processamento_4.log
-```
+    ```
+    $ ls 
+    $ ARQUIVOS  ARQUIVOS_PROCESSADOS
+    $ ls ARQUIVOS/
+    $ log_para_processamento_1.log  log_para_processamento_2.log  log_para_processamento_3.log  log_para_processamento_4.log
+    ```
 
     Faça um script que movas os arquivos para um diretório de arquivos processados e renomeie todos os arquivos movidos incluindo o dia e horário sem pontos no nome. Log no terminal todas as etapas do processo.
 
