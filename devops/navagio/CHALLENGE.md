@@ -44,11 +44,11 @@ poetry install
     Bônus: Implemente ambas as pipelines.
 
 4. Responda as questões abaixo em um arquivo chamado ANSWERS.md
-* a) O que é uma sub-rede e por que é usada em uma VPC?
-* b) Descreva o conceito de balanceamento de carga e porque ele é importante em uma arquitetura de nuvem.
-* c) Como um servidor proxy funciona para intermediar as solicitações entre os clientes e os servidores de destino?
-* d) O que é NAT e qual é o seu propósito em uma rede?
-* e) Explique nas suas palavras, o que acontece quando você acessa um site no seu browser por baixo dos panos?
+    * a) O que é uma sub-rede e por que é usada em uma VPC?
+    * b) Descreva o conceito de balanceamento de carga e porque ele é importante em uma arquitetura de nuvem.
+    * c) Como um servidor proxy funciona para intermediar as solicitações entre os clientes e os servidores de destino?
+    * d) O que é NAT e qual é o seu propósito em uma rede?
+    * e) Explique nas suas palavras, o que acontece quando você acessa um site no seu browser por baixo dos panos?
 
     obs: Não responder todas as questões não é impeditivo, essa etapa consiste em avaliar o conhecimento em infraestrutura do candidato. 
 
