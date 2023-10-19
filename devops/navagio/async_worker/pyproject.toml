@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "async_worker"
+version = "0.1.0"
+description = ""
+authors = ["Everton Arakaki <everton.arakaki@shipay.com.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+faust = "^1.10.4"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
