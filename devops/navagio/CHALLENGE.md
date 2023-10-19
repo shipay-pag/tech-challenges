@@ -44,11 +44,11 @@ poetry install
     Bônus: Implemente ambas as pipelines.
 
 4. Responda as questões abaixo em um arquivo chamado ANSWERS.md
-a) O que é uma sub-rede e por que é usada em uma VPC?
-b) Descreva o conceito de balanceamento de carga e porque ele é importante em uma arquitetura de nuvem.
-c) Como um servidor proxy funciona para intermediar as solicitações entre os clientes e os servidores de destino?
-d) O que é NAT e qual é o seu propósito em uma rede?
-e) Explique nas suas palavras, o que acontece quando você acessa um site no seu browser por baixo dos panos?
+* a) O que é uma sub-rede e por que é usada em uma VPC?
+* b) Descreva o conceito de balanceamento de carga e porque ele é importante em uma arquitetura de nuvem.
+* c) Como um servidor proxy funciona para intermediar as solicitações entre os clientes e os servidores de destino?
+* d) O que é NAT e qual é o seu propósito em uma rede?
+* e) Explique nas suas palavras, o que acontece quando você acessa um site no seu browser por baixo dos panos?
 
     obs: Não responder todas as questões não é impeditivo, essa etapa consiste em avaliar o conhecimento em infraestrutura do candidato. 
 
@@ -57,10 +57,10 @@ e) Explique nas suas palavras, o que acontece quando você acessa um site no seu
 $ ls 
 $ ARQUIVOS  ARQUIVOS_PROCESSADOS
 $ ls ARQUIVOS/
-$ log_para_processamento_1.log  log_para_processamento_2.log  log_para_processamento_3.log  log_para_processamento_4.log  log_para_processamento_5.log
+$ log_para_processamento_1.log  log_para_processamento_2.log  log_para_processamento_3.log  log_para_processamento_4.log
 ```
 
-Faça um script que movas os arquivos para um diretório de arquivos processados e renomeie todos os arquivos movidos incluindo o dia e horário sem pontos no nome. Log no terminal todas as etapas do processo.
+    Faça um script que movas os arquivos para um diretório de arquivos processados e renomeie todos os arquivos movidos incluindo o dia e horário sem pontos no nome. Log no terminal todas as etapas do processo.
 
 6. Agende a execução periódica desse script para uma vez ao dia e nos mande o processo de configuração.
 
