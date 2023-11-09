@@ -35,7 +35,7 @@ Dentro do repositório tem uma aplicação Flask bem simples, é uma API que res
 
 ## Desafios:
 
-1. Você deverá Dockerizar a aplicação garantindo que o Dockerfile esteja otimizado e com boas praticas de segurança.
+1. Você deverá Dockerizar a aplicação garantindo que o Dockerfile esteja otimizado e com boas praticas de segurança (Iremos executar o Dockerfile criado, garanta que ele esteja funcionando e a aplicação acessivel).
 
     Bônus: A partir do Dockerfile criado, faça o build e envie a imagem para o Dockerhub, crie um deployment utilizando essa imagem e descreva o processo para aplicar o yaml em um cluster de Kubernetes.
 
@@ -53,11 +53,8 @@ Dentro do repositório tem uma aplicação Flask bem simples, é uma API que res
     * Crie um diagrama de redes que represente a infraestrutura proposta.
     * Destaque claramente as VPCs, sub-redes, e máquinas em cada ambiente.
     * Destaque qual o range de IP utilizado em ambos os ambientes.
-    * Inclua detalhes sobre gateways, firewalls, e quaisquer outros componentes relevantes.
 
-    ##### Segurança:
-    * Implemente medidas de segurança apropriadas para proteger a rede.
-    * Considere o uso de grupos de segurança, listas de controle de acesso (ACLs), e outras práticas recomendadas.
+    Bônus: Para garantir a segurança da rede no Cloud Provider, inclua detalhes sobre gateways, firewalls, e quaisquer outros componentes relevantes que você incluiria nessa estrutura.
 
 3. Considere um diretório com diversos arquivos que são adicionados diariamente;
     ```
@@ -71,5 +68,7 @@ Dentro do repositório tem uma aplicação Flask bem simples, é uma API que res
 
 4. Agende a execução periódica desse script para uma vez ao dia e nos mande o processo de configuração.
 
+
+Dentro do diretorio existe um arquivo chamado ANSWERS.md, utilize para colocar todas as respostas e informações que achar necessario.
 
 Boa Sorte.
