@@ -6,14 +6,15 @@
 
 **Funcionalidade a ser desenvolvida:** Filtro de itens por texto.
 
-**Requisitos:**
-    1. Adicione um campo de input de texto na tela onde a lista é exibida;  
-    2. À medida que o usuário digita nesse campo, a lista de itens deve ser filtrada dinamicamente para exibir apenas os itens cujo nome/título contenha o texto digitado;  
-    3. A filtragem deve ser case-insensitive (ignorar maiúsculas/minúsculas);  
-    4. Mantenha a estrutura de componentes existente, criando novos componentes se julgar necessário;  
-    5. Preocupe-se com a clareza do código, boas práticas de React (uso de estado, props, hooks como ```useState``` e ```useEffect``` de forma apropriada) e componentização;  
+**Requisitos:**  
 
-***Nota: Você pode utilizar o scaffold disponibilizado no diretório "shipay-react-app" ou sugerir uma estrutura mais adequada. O que acahar melhor.***
+    a. Adicione um campo de input de texto na tela onde a lista é exibida;  
+    b. À medida que o usuário digita nesse campo, a lista de itens deve ser filtrada dinamicamente para exibir apenas os itens cujo nome/título contenha o texto digitado;  
+    c. A filtragem deve ser case-insensitive (ignorar maiúsculas/minúsculas);  
+    d. Mantenha a estrutura de componentes existente, criando novos componentes se julgar necessário;  
+    e. Preocupe-se com a clareza do código, boas práticas de React (uso de estado, props, hooks como ```useState``` e ```useEffect``` de forma apropriada) e componentização;  
+
+***Nota: Você pode utilizar o scaffold disponibilizado no diretório "shipay-react-app" ou sugerir uma estrutura mais adequada. O que achar melhor.***  
 
 **2.- Seu colega solicitou a avaliação de uma Pull Request para que ele possa seguir com o deploy para os testes em Sandbox. Por favor, avalie a PR e faça as ponderações pertinentes, se necessário.**
 
