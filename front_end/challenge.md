@@ -155,4 +155,33 @@ Mensagem de erro.
 ```
 
 
+**5.- Imagine que você trabalha em uma empresa de streaming de vídeos. A empresa deseja aprimorar e expandir suas interfaces de cliente e precisa que você desenhe uma solução utilizando o padrão Back for Front-end (BFF).**
+
+Atualmente, a empresa possui os seguintes microsserviços (MS) no back-end:  
+  
+MS de Catálogo: Fornece informações sobre filmes e séries (título, sinopse, elenco, classificações, etc.).  
+MS de Usuários: Gerencia dados dos usuários (perfis, preferências, histórico de visualização).  
+MS de Streaming: Responsável pela entrega do vídeo em si.  
+
+As interfaces de cliente são:  
+  
+a. Aplicação Web: Deve exibir uma grande quantidade de informações do catálogo na tela inicial, recomendações personalizadas e histórico detalhado.  
+b. Aplicação Mobile (iOS/Android): Deve ter uma interface mais leve, otimizada para telas menores e conexões de dados potencialmente mais lentas, focando em funcionalidades essenciais e carregamento rápido de listas de vídeos.  
+c. Aplicação para Smart TVs: Precisa de uma navegação simples, otimizada para controle remoto, e foco na qualidade de imagem e informações essenciais do vídeo antes da reprodução.  
+
+Considerando o cenário acima, por favor, responda às seguintes perguntas:  
+
+Conceito do BFF: Explique resumidamente o que é um Back for Front-end e qual seria o principal papel e benefícios de implementar um (ou mais) BFFs nesta situação para a empresa de streaming.  
+
+Design da Solução: Você implementaria um único BFF para todos os clientes ou múltiplos BFFs? Justifique sua escolha.  
+Esboce um diagrama simples mostrando como os clientes (Web, Mobile, Smart TV), o(s) BFF(s) e os microsserviços existentes se conectariam.  
+
+Distribuição de Lógicas e Responsabilidades: Para cada um dos exemplos de lógica/tarefa abaixo, indique onde você acredita que ela seria predominantemente implementada (no cliente, no BFF ou nos microsserviços de back-end) e justifique brevemente:  
+a) Lógica para renderizar os botões e o layout da interface do usuário em cada dispositivo.  
+b) Lógica para agregar dados do MS de Catálogo e do MS de Usuários para montar a tela de "Recomendações Personalizadas" para a versão Web, que exibe muitos detalhes.  
+c) Lógica para buscar uma lista simplificada de "Novos Lançamentos" para a aplicação Mobile, contendo apenas título, imagem de capa e duração.  
+d) Lógica de negócio principal para registrar que um usuário assistiu a um vídeo (atualizar histórico).  
+e) Lógica para adaptar a qualidade do stream de vídeo (MS de Streaming) com base na velocidade da conexão do usuário Mobile.  
+f) Validação de formato de e-mail no formulário de cadastro no cliente Web.  
+
 BOA SORTE!
