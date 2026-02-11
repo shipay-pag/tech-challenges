@@ -27,8 +27,12 @@ Em vez de configurar múltiplos servidores, você deve criar uma aplicação bas
 
 * **Tarefa:** Implementar uma página que simule a recepção de um parâmetro de "Tenant" (via URL ou Cookie).
 * **Requisito Técnico:** Demonstrar como o SSR lida com a identidade visual (White Label) de dois clientes diferentes (ex: Cliente A e Cliente B), alterando minimamente um logotipo e uma cor primária.
-* **Documentação:** Descreva como você organizaria a infraestrutura para que outros times pudessem plugar "Remote Apps" (ex: um microfrontend de pagamentos) nesse Shell.
+* **Documentação:**
+* + ***Contexto para a questão: Sabendo que o tema Micro Front-End é um assunto complexo, e limitando o escopo da questão por ser uma avaliação, por favor imagine que a contrução do painel CMS será dividida entre times de desenvolvimento, e que cada time possui funcionalidades características de um produto distinto do outro dentro de um portfólio da empresa.***
+* + Questão: Descreva como você organizaria a infraestrutura para que outros times pudessem plugar "Remote Apps" (ex: um microfrontend de pagamentos) nesse Shell.
 
+\
+  \
 **2.- Design System & Escalabilidade**
 
 Proponha a base de um sistema de design que suporte múltiplos tenants e múltiplos times.
@@ -36,6 +40,8 @@ Proponha a base de um sistema de design que suporte múltiplos tenants e múltip
 * **Tarefa:** Criar uma estrutura de Design Tokens (JSON ou variáveis CSS) e implementar um único componente (ex: um Botão ou Card) que consuma esses tokens.
 * **Ponto de Atenção:** Como você garantiria que uma mudança no Design System não quebrasse os microfrontends que o utilizam? (Explique brevemente sua estratégia de versionamento e governança no README).
 
+\
+  \
 **3.- Abstração de Componentes Complexos (Gráficos)**
 
 Avalia-se aqui como você desenha APIs de componentes para serem usados por outros desenvolvedores.
