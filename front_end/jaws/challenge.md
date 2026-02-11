@@ -22,6 +22,7 @@ Avaliar a visão arquitetural, tomada de decisão e a capacidade de criar abstra
 
 **1.- Estratégia de Microfrontends & SSR**
 
+Foi atribuído a você, o desenvolvimento de um painel CMS (Sistema de Gerenciamento de Conteúdos) White Label, que permitirá a customização da identidade visual pelos nosso clientes.
 Em vez de configurar múltiplos servidores, você deve criar uma aplicação base (Shell) utilizando um framework com suporte a SSR (ex: Next.js).
 
 * **Tarefa:** Implementar uma página que simule a recepção de um parâmetro de "Tenant" (via URL ou Cookie).
