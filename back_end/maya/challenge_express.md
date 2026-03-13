@@ -7,3 +7,5 @@ Como este novo serviço deverá ser resiliente e essencial para os nossos cadast
 Apesar de depender do consumo de múltiplas APIs de terceiros, a resposta do serviço desenvolvido deverá ser síncrona.
 Você pode verificar exemplos das APIs utilizadas em [requests_e_responses_apis_questao_1.json](requests_e_responses_apis_questao_1.json).
 Implemente o referido serviço em Java/Spring Boot.
+
+BOA SORTE!
