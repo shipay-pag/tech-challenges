@@ -4,9 +4,10 @@ import './App.css';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
+  const normalizedSearchTerm = searchTerm.trim().toLowerCase();
 
   const filteredItems = initialItems.filter((item) =>
-    item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    item.name.toLowerCase().includes(normalizedSearchTerm)
   );
 
   return (
