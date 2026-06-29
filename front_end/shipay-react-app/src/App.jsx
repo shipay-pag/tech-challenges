@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import initialItems from './data'; // Mock data
-import './App.css';
+import React, { useState } from "react";
+import initialItems from "./data.js";
+import "./App.css";
 
 function ProductSearch({ value, onChange }) {
   return (
@@ -29,11 +29,11 @@ function ProductList({ items }) {
 }
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
 
   const filteredItems = initialItems.filter((item) =>
-    item.name.toLowerCase().includes(normalizedSearchTerm)
+    item.name.toLowerCase().includes(normalizedSearchTerm),
   );
 
   return (
