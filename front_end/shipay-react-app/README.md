@@ -1,35 +1,35 @@
 # Shipay Front-End Engineer Challenge
 
-Implementacao da funcionalidade de filtro de produtos transacionais da Shipay em uma SPA React com Vite.
+Implementação da funcionalidade de filtro de produtos transacionais da Shipay em uma SPA React com Vite.
 
 ## Projeto
 
 Funcionalidades implementadas:
 
 - campo de busca para filtrar produtos por texto;
-- filtro dinamico conforme o usuario digita;
+- filtro dinâmico conforme o usuário digita;
 - busca case-insensitive;
 - tratamento de busca sem resultados exibindo a lista vazia.
 
 ## Melhoria sugerida
 
-Embora nao tenha sido solicitado no desafio, eu adicionaria um debounce no input de busca em um cenario real. Isso evitaria recalcular o filtro a cada tecla digitada, reduzindo processamento desnecessario principalmente em listas maiores ou quando a busca depender de chamadas a APIs.
+Embora não tenha sido solicitado no desafio, eu adicionaria um debounce no input de busca em um cenário real. Isso evitaria recalcular o filtro a cada tecla digitada, reduzindo processamento desnecessário principalmente em listas maiores ou quando a busca depender de chamadas a APIs.
 
 ## Como executar
 
-Entre no diretorio da aplicacao:
+Entre no diretório da aplicação:
 
 ```bash
 cd shipay-react-app
 ```
 
-Instale as dependencias:
+Instale as dependências:
 
 ```bash
 npm install
 ```
 
-Execute a aplicacao em modo de desenvolvimento:
+Execute a aplicação em modo de desenvolvimento:
 
 ```bash
 npm run dev
@@ -45,16 +45,16 @@ Execute os testes com:
 npm test
 ```
 
-### Cenarios cobertos
+### Cenários cobertos
 
-1. **Renderizacao inicial da lista**
+1. **Renderização inicial da lista**
    - Valida que todos os produtos de `data.js` aparecem quando a tela carrega sem termo de busca.
 
-2. **Filtro dinamico conforme o usuario digita**
-   - Simula a digitacao no campo de busca e valida que a lista e atualizada de acordo com o termo informado.
+2. **Filtro dinâmico conforme o usuário digita**
+   - Simula a digitação no campo de busca e valida que a lista é atualizada de acordo com o termo informado.
 
 3. **Busca case-insensitive**
-   - Valida que a busca encontra produtos mesmo quando o texto digitado usa letras minusculas e os dados possuem letras maiusculas.
+   - Valida que a busca encontra produtos mesmo quando o texto digitado usa letras minúsculas e os dados possuem letras maiúsculas.
 
 4. **Busca sem resultados**
-   - Valida que nenhum produto e renderizado quando o termo digitado nao corresponde a nenhum item da lista.
+   - Valida que nenhum produto é renderizado quando o termo digitado não corresponde a nenhum item da lista.

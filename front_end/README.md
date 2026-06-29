@@ -57,11 +57,13 @@ addUser() {
 Na renderização da lista, também faltou passar uma `key` para cada item do `map`. Isso pode gerar warning no React e causar problemas quando a lista mudar.
 
 ```jsx
-{this.state.users.map((user) => (
-  <li key={user.id}>
-    {user.name} ({user.email})
-  </li>
-))}
+{
+  this.state.users.map((user) => (
+    <li key={user.id}>
+      {user.name} ({user.email})
+    </li>
+  ));
+}
 ```
 
 Além desses ajustes, eu também adicionaria uma validação simples para não permitir cadastro com nome ou e-mail vazio, limparia os campos depois de adicionar um usuário e evitaria gerar o `id` com base em `users.length + 1`, porque isso pode gerar ids repetidos se algum item for removido no futuro.
@@ -195,12 +197,23 @@ Nesse cenário, eu usaria múltiplos BFFs, um para cada tipo principal de client
 
 Um desenho simples seria:
 
-```txt
-Aplicação Web      -> BFF Web      -> MS Catálogo
-Aplicação Mobile   -> BFF Mobile   -> MS Usuários
-Aplicação Smart TV -> BFF TV       -> MS Streaming
-                                  -> MS Catálogo
-                                  -> MS Usuários
+```mermaid
+flowchart LR
+  web[Aplicação Web] --> bffWeb[BFF Web]
+  mobile[Aplicação Mobile] --> bffMobile[BFF Mobile]
+  tv[Aplicação Smart TV] --> bffTv[BFF TV]
+
+  bffWeb --> catalog[MS Catálogo]
+  bffWeb --> users[MS Usuários]
+  bffWeb --> streaming[MS Streaming]
+
+  bffMobile --> catalog
+  bffMobile --> users
+  bffMobile --> streaming
+
+  bffTv --> catalog
+  bffTv --> users
+  bffTv --> streaming
 ```
 
 Na prática, cada BFF poderia consumir os mesmos microsserviços, mas devolver respostas diferentes para cada cliente. Por exemplo, o BFF Web pode montar uma home mais completa, enquanto o BFF Mobile pode devolver uma lista mais enxuta com menos campos.
@@ -229,4 +242,4 @@ A parte principal deve ficar no MS de Streaming, porque ele é responsável pela
 
 **f) Validar formato de e-mail no cadastro Web**
 
-Eu faria uma validação simples no cliente Web para dar feedback rápido ao usuário. Mesmo assim, essa validação também precisa existir no backend, porque validação só no front não é suficiente para garantir integridade dos dados.
+Eu faria essa validação no cliente Web, para dar feedback rápido ao usuário antes do envio do formulário. Mesmo assim, essa validação também precisa existir obrigatoriamente no MS/back-end responsável pelo cadastro, porque validação só no front não garante integridade dos dados.
